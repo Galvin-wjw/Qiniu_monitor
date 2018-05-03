@@ -7,17 +7,17 @@ from email.header import Header
 
 def get_mail(subject,href):
     content = 'Address:  https://segmentfault.com' + href  # 邮件正文
-    tolist = ['137606834@qq.com', 'cuimingzhe@qiniu.com']
+    tolist = ['', '']
     msg = MIMEText(content, 'plain', 'utf-8')
-    msg['From'] = 'Forum-Monitoring <galvin_wong@163.com>'  # 发件人
+    msg['From'] = 'Forum-Monitoring <163.com>'  # 发件人
     msg['Subject'] = Header('[Segment-Fault:]' + subject, 'utf-8').encode()  # 主题
     # msg['To'] = ' '.join(tolist)  #收件人
 
     # 输入Email地址和口令:
-    from_addr = 'galvin_wong@163.com'
-    password = 'ymy870321'
+    from_addr = '163.com'
+    password = ''
     # 输入收件人地址:
-    #to_addr = '137606834@qq.com'
+    #to_addr = '137@qq.com'
     # 输入SMTP服务器地址:
     smtp_server = 'smtp.163.com'
     smtp_port = 25
