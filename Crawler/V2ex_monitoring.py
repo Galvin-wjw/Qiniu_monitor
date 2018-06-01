@@ -14,9 +14,9 @@ if __name__ == '__main__':
         "https://www.v2ex.com/go/programmer"
     ]
 
-    slack = slackweb.Slack('https://hooks.slack.com/services/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')
+    slack = slackweb.Slack('')
 
-    id_list2 = [7,7,7,7,7,7]
+    id_list2 = []
     while True:
         id_list = []
         for index, list in enumerate(url_list):
